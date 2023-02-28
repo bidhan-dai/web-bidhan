@@ -1,0 +1,433 @@
+$font-color-heading: #353535;
+$font-color-secondary: #c4aa6c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  // font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #ededed;
+
+  // border-radius: 15px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // gap: 1rem;
+  //signup ko lagi
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: #c4aa6c;
+  padding: 1rem;
+  width: 27.5rem;
+  height: 5.3rem;
+
+  // top: 459px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 7rem;
+}
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner {
+  background: linear-gradient(rgba(12, 12, 12, 0.36), rgba(12, 12, 12, 0.36)),
+    url(/img/banner.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-text {
+  position: relative;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 28px;
+  color: #ededed;
+  padding-bottom: 3rem;
+}
+.welcome-text:after {
+  content: "";
+  position: absolute;
+  width: 179px;
+  height: 2px;
+  left: 240px;
+  top: 44px;
+
+  background: #c4aa6d;
+}
+.mount-text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7rem;
+  padding-bottom: 5rem;
+  color: #ededed;
+}
+.mount-discription {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+
+  color: #ededed;
+  padding-bottom: 10rem;
+}
+
+.booking {
+  display: block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #ededed;
+  padding: 1rem;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // gap: 1rem;
+  //signup ko lagi
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  background-color: #c4aa6c;
+  padding: 1rem;
+  width: 27.5rem;
+  height: 5.3rem;
+  margin-top: 5rem;
+}
+.booking:hover {
+  color: #353535;
+  background-color: #bebebe;
+}
+/* ***********************************************************
+***********************************accomodation**************/
+.section-accomodation {
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.secondary-header {
+  position: relative;
+  color: $font-color-heading;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 107px;
+  text-align: center;
+  padding-bottom: 11.1rem;
+}
+.secondary-header::before {
+  content: "";
+  position: absolute;
+  top: 137px;
+  border-bottom: 1px solid $font-color-secondary;
+  display: block;
+  width: 179px;
+  height: 2px;
+  left: 43%;
+}
+.accomodation-heading {
+  color: $font-color-secondary;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 12.2rem;
+}
+
+.img-common {
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  background-size: contain;
+  height: auto;
+}
+.img-left {
+  position: relative;
+}
+.img-left-room img {
+  position: absolute;
+}
+
+.accomodation-number {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 20rem;
+  color: rgba(255, 255, 255, 0.48);
+  text-align: center;
+  position: relative;
+  top: 11.1rem;
+}
+
+.deluxe-room1 {
+  margin-bottom: 8.1rem;
+}
+.rooms-left {
+  position: relative;
+  overflow: hidden;
+}
+
+.rooms-left > img {
+  position: relative;
+}
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8.9rem;
+  background: rgba(17, 17, 17, 0.69);
+  gap: 0.2rem;
+}
+
+.border {
+  width: 43.5rem;
+  border: 2px solid #c4aa6c;
+}
+.discription-content {
+  padding-bottom: 18rem;
+}
+.top-section {
+  padding-top: 1rem;
+  position: relative;
+}
+.top-section:after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 0px;
+  left: 194px;
+  top: 400px;
+  display: block;
+  border: 1px solid #c4aa6c;
+  transform: rotate(-90deg);
+}
+.suite {
+  font-size: 10rem;
+  font-weight: 500;
+  color: #ededed;
+  position: absolute;
+  top: 26.8rem;
+  left: 14.45rem;
+}
+.accomodation-text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #ededed;
+  margin-top: 25px;
+  padding-top: 14.5rem;
+}
+
+.deluxe-room1,
+.deluxe-room2 {
+  position: relative;
+}
+
+.deluxe-text span,
+.deluxe-text p,
+.standard-text span,
+.standard-text p {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+
+  text-align: center;
+
+  color: #c4aa6c;
+  display: inline-block;
+}
+.deluxe-text p,
+.standard-text p {
+  position: absolute;
+  color: #ededed;
+  bottom: 11px;
+  left: 24px;
+  display: flex;
+  gap: 1rem;
+}
+
+.section-amenities {
+  padding: 9.6rem 0 0rem 0;
+}
+.amenities-background {
+  position: relative;
+  background-image: linear-gradient(
+      180deg,
+      rgba(12, 12, 12, 0.9) 7.76%,
+      rgba(14, 14, 13, 0.5) 73.66%
+    ),
+    url(/img/bg.png);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.amenities-primary-discription {
+  font-family: "Playfair Display";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 5.5rem;
+  line-height: 8rem;
+  text-align: center;
+
+  color: #ededed;
+}
+
+.amenities-secondary-discription {
+  position: absolute;
+  top: 45rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #ededed;
+  padding-top: 4rem;
+}
+
+.amenities-primary:before {
+  content: "";
+  position: absolute;
+  width: 143px;
+  height: 2px;
+  left: 65rem;
+
+  background: #c4aa6c;
+  transform: rotate(-90deg);
+}
+.amenities-primary::after {
+  content: "";
+  position: absolute;
+  top: 44rem;
+  left: 64rem;
+  width: 179px;
+  height: 2px;
+  background: #c4aa6c;
+}
+/*****************************section-facilities*****************************/
+.section-facilities {
+  padding: 9.6rem 0 0 0;
+}
+.facilities-background {
+  position: relative;
+  background-image: linear-gradient(
+      176.85deg,
+      #ffffff 6.44%,
+      rgba(255, 255, 255, 0) 64.8%
+    ),
+    url(/img/footer.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 50rem;
+  background-size: cover;
+  background-position: center;
+}
+.facilities-discription {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #353535;
+}
+
+///////footer/////
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.2rem;
+}
+
+footer {
+  background-color: #353535;
+}
+.footer-section {
+  padding: 2.4rem;
+}
+.nav-branding {
+  color: #c4aa6c;
+  font-size: 3.4rem;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+  // align-items: center;
+  // justify-content: center;
+}
+.nav-menu > a {
+  // list-style: none;
+  text-decoration: none;
+  color: #ededed;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu > a:hover {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.nav-menu {
+  // font-weight: 400;
+  font-size: 2.2rem;
+  font-family: "raleway";
+  color: #ededed;
+}
+.home-luxury {
+  font-family: "Playfair Display";
+}
+.nav-rights {
+  color: #bebebe;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
